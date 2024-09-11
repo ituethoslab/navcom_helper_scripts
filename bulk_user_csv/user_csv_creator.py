@@ -3,7 +3,7 @@ import argparse
 from random import randint
 from typing import List, Dict
 
-fieldnames = ["name", "password", "tag", "expires", "notes"] #<- subject to change as 4CAT updates
+fieldnames = ["name", "password", "tags", "expires", "notes"] #<- subject to change as 4CAT updates
 
 def bulk_user_creator(groups: int, name: str, password:str, tag : str, expiration: str = None, notes: str = None) -> List[Dict]:
     '''
@@ -56,11 +56,11 @@ def csv_maker(data: List[Dict] , filename: str) -> None:
             if all(key in user for key in fieldnames):  # Ensure all required keys are present
                 writer.writerow(user)
 
-def main():
+def main() -> None:
     '''
     Main function that lets the tool be run as a CLI tool
     '''
-
+    print("Starting script...")
     parser = argparse.ArgumentParser(description="Creates a CSV file with bulk user data.")
     parser.add_argument("groups", type=int, help="Number of student groups")
     parser.add_argument("name", type=str, help="Base name for the group's username")
@@ -76,6 +76,5 @@ def main():
     csv_maker(user_data, args.output_file)
 
 if __name__ == "__main__":
-    print("Starting script...")
     main()
-    print("All done check your file")
+    print(f"All done, file created")
