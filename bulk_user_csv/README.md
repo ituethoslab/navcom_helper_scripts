@@ -26,13 +26,13 @@ The following command:
 
 Will output a CSV file called `navcom24_groups.csv` with content like this: 
 
-`
-name,password,tags,expires,notes
-navcom24_g1,sofa_1833,navcom24,,
-navcom24_g2,sofa_480,navcom24,,
-navcom24_g3,sofa_1916,navcom24,,
-navcom24_g4,sofa_1059,navcom24,,
-`
+| Name | Password | Tags | Expires | Notes |
+|------|----------|------|--------|-------|
+| navcom24_g1 | sofa_1833 | navcom24 | | |
+| navcom24_g2 | sofa_480 | navcom24 | | |
+| navcom24_g3 | sofa_1916 | navcom24 | | |
+| navcom24_g4 | sofa_1059 | navcom24 | | |
+
 ## Importing to 4CAT
 
 To import to 4CAT follow this steps while logged in as admin:
