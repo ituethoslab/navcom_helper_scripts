@@ -8,11 +8,11 @@ It takes in the following arguments
 
 The function requires the following arguments:
 
-**groups**: The number of groups in the NavCom cohort
-**name**: Base name for the student groups, for example 'navcom24'
-**password**: Base password for the user, a random number will be appended to this
-**tag**: A tag for later bulk dataset management, usually the same as the cohort name _i.e_ 'navcom24'
-**output_file**: The desired name for the CSV file
+- **groups**: The number of groups in the NavCom cohort
+- **name**: Base name for the student groups, for example 'navcom24'
+- **password**: Base password for the user, a random number will be appended to this
+- **tag**: A tag for later bulk dataset management, usually the same as the cohort name _i.e_ 'navcom24'
+- **output_file**: The desired name for the CSV file
 
 Two more arguments exist, but these are optional:
 
