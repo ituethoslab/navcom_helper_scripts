@@ -77,4 +77,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-    print(f"All done, file created")
+    print("All done, file created")
