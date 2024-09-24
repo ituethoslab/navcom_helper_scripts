@@ -16,8 +16,8 @@ The function requires the following arguments:
 
 Two more arguments exist, but these are optional:
 
-**expiration**: Sets an expiration date for the users being created
-**notes**: Adds a note for this bulk user creation
+- **expiration**: Sets an expiration date for the users being created
+- **notes**: Adds a note for this bulk user creation
 
 ### Example of usage in the terminal
 
